@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="nav">
+      <div class="flex-container">
+        <h1 class="nav-title">DojoWeather</h1>
+        <ul class="nav-links">
+          <li onclick="mostrarmensaje()"><a href="#">Burkank</a></li>
+          <li  onclick="mostrarmensaje()"><a href="#" class="active">Chicallo</a></li>
+          <li  onclick="mostrarmensaje()"><a href="#">Dallas</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="encabezado">
+        <h2>San jose</h2>
+        <span>Mostrar Temperatura en:</span>
+        <select onchange="cambiartemperatura(this)">
+          <option value="c">c</option>°
+          <option value="f">f</option>°
+          
+        </select>
+      </div>
+    </main>
+    <!-- main -->
+    <main class="contenedor">
+      <div class="pronostico">
+        <div class="dia">
+          <h3>hoy</h3>
+          <img
+            class="imagen-pronostico"
+            src="assets/some_sun.png"
+            alt="lluvioso"
+          />
+          <div>algo de lluvia</div>
+          <div class="temperaturas">
+            <div class="max"><span>24</span>°</div>
+            <div class="min"><span>18</span>°</div>
+          </div>
+        </div>
+      </div>
+      <div class="pronostico">
+        <div class="dia">
+          <h3>hoy</h3>
+          <img
+            class="imagen-pronostico"
+            src="assets/some_clouds.png"
+            alt="lluvioso"
+          />
+          <div>algo de lluvia</div>
+          <div class="temperaturas">
+            <div class="max"><span>27</span>°</div>
+            <div class="min"><span>19</span>°</div>
+          </div>
+        </div>
+      </div>
+      <div class="pronostico">
+        <div class="dia">
+          <h3>hoy</h3>
+          <img
+            class="imagen-pronostico"
+            src="assets/some_rain.png"
+            alt="lluvioso"
+          />
+          <div>algo de lluvia</div>
+          <div class="temperaturas">
+            <div class="max"><span>21</span>°</div>
+            <div class="min"><span>16</span>°</div>
+          </div>
+        </div>
+      </div>
+      <div class="pronostico">
+        <div class="dia">
+          <h3>hoy</h3>
+          <img
+            class="imagen-pronostico"
+            src="assets/some_sun.png"
+            alt="lluvioso"
+          />
+          <div>algo de lluvia</div>
+          <div class="temperaturas">
+            <div class="max"><span>26</span>°</div>
+            <div class="min"><span>21</span>°</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="cookies">
+      <img src="/assets/cookie.png" alt="cookies" />
+      <div class="mensaje">
+        <h3>stop! cookie time</h3>
+        <p>We use cookies(sadly not the edible ones) to personalize
+         content and ads, to provide social media features and to analyse our traffic.<u>read more</u></p>
+      </div>
+      <div class="opcion">
+        <button class="aceptar" onclick="removerCookies(this)">I accept</button>
+      </div>
+    </div>
+    <script src="timeout.js"></script>
+  </body>
+</html>
